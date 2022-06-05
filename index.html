@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Spinny Wheel</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <center>
+        <h1>Billy Pilgrim's Wheel of Life</h1>
+
+        <div id="mainbox" class="mainbox">
+            <div id="box" class="box">
+                <div class="box1">
+                    <span class="span1"><b>Marriage 👰</b></span>
+                    <span class="span2"><b>Tralfamadore 🛸👽</b></span>
+                    <span class="span3"><b>Bombing of Dresden</b></span>
+                    <span class="span4" style="background-color: #fce3de;"><b>Birth 🐣</b></span>
+                </div>
+                <div class="box2">
+                    <span class="span1"><b>Valencia's Death 💀</b></span>
+                    <span class="span2"><b>Montana Wildhack 💃</b></span>
+                    <span class="span3"><b>Barbershop Quartet 🎶</b></span>
+                    <span class="span4" style="background-color: #f4defc"><b>Death 💀</b></span>
+                </div>
+            </div>
+
+            <button class="spin" onclick="buttonRotateFunction()"></button>
+        </div>
+        <h1 id="location">Currently at: Birth🐣</h1>
+    </center>
+
+    <script>
+        setInterval(rotateFunction, 7500);
+    </script>
+</body>
+
+</html>

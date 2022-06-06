@@ -59,7 +59,7 @@ h1 {
     border: 2.5px dashed #fff069;
     overflow: hidden;
     transition: all ease 0;
-    transform: rotate(50400deg);
+    transform: rotate(100800deg);
     transition: all ease 2.5s;
     z-index: 10;
 }

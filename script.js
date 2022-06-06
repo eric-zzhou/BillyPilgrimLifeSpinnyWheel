@@ -3,7 +3,7 @@ function rotateFunction() {
     var el = document.getElementById('box');
     var angle = el.value;
     if (typeof angle == 'undefined') {
-        angle = 50400;
+        angle = 100800;
     }
 
     // Constants
@@ -16,8 +16,8 @@ function rotateFunction() {
             while (angle < 0) {
                 angle += 360;
             }
-        } else if (angle >= 100800) {
-            while (angle >= 100800) {
+        } else if (angle >= 201600) {
+            while (angle >= 201600) {
                 angle -= 360;
             }
         }
@@ -73,7 +73,7 @@ function buttonRotateFunction() {
     var el = document.getElementById('box');
     var angle = el.value;
     if (typeof angle == 'undefined') {
-        angle = 50400;
+        angle = 100800;
     }
     var temp = Math.floor(Math.random() * 2);
     if (Math.floor(temp)) {
@@ -89,8 +89,8 @@ function buttonRotateFunction() {
         while (angle < 0) {
             angle += 360;
         }
-    } else if (angle >= 100800) {
-        while (angle >= 100800) {
+    } else if (angle >= 201600) {
+        while (angle >= 201600) {
             angle -= 360;
         }
     }
@@ -143,7 +143,7 @@ function buttonRotateRight() {
     var el = document.getElementById('box');
     var angle = el.value;
     if (typeof angle == 'undefined') {
-        angle = 50400;
+        angle = 100800;
     }
 
     // Constants
@@ -154,8 +154,8 @@ function buttonRotateRight() {
         while (angle < 0) {
             angle += 360;
         }
-    } else if (angle >= 100800) {
-        while (angle >= 100800) {
+    } else if (angle >= 201600) {
+        while (angle >= 201600) {
             angle -= 360;
         }
     }
@@ -208,7 +208,7 @@ function buttonRotateLeft() {
     var el = document.getElementById('box');
     var angle = el.value;
     if (typeof angle == 'undefined') {
-        angle = 50400;
+        angle = 100800;
     }
 
     // Constants
@@ -219,8 +219,8 @@ function buttonRotateLeft() {
         while (angle < 0) {
             angle += 360;
         }
-    } else if (angle >= 100800) {
-        while (angle >= 100800) {
+    } else if (angle >= 201600) {
+        while (angle >= 201600) {
             angle -= 360;
         }
     }

@@ -23,6 +23,10 @@ body {
     background-size: cover;
 }
 
+h1 {
+    position: static;
+}
+
 .mainbox {
     /* Wheel position and static dimensions */
     position: relative;
@@ -54,6 +58,8 @@ body {
     border-radius: 50%;
     border: 2.5px dashed #fff069;
     overflow: hidden;
+    transition: all ease 0;
+    transform: rotate(50400deg);
     transition: all ease 2.5s;
     z-index: 10;
 }
@@ -149,8 +155,66 @@ span b {
     /* font-size: 7.5px; */
 }
 
-@keyframes animateArrow {
-    50% {
-        right: -40px;
-    }
+.spinl {
+    /* Positioning button */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-375%, -50%);
+    width: 125px;
+    height: 125px;
+    /* Other formatting */
+    border-radius: 50%;
+    border: 0.125px solid rgb(175, 175, 175);
+    background-color: rgb(225, 225, 225);
+    color: #fff;
+    box-shadow: 0 2.5px 2.5px #bbbbbb;
+    /* Font stuff */
+    /* font-weight: bold; */
+    /* font-size: 10px; */
+    /* Cursor */
+    cursor: pointer;
+    /* z-index: 10; */
+    background-image: url('spin-left.png');
+    background-position: 1px;
+    background-size: 120px;
+}
+
+.spinl:active {
+    /* Change size when clicked */
+    width: 115px;
+    height: 115px;
+    /* font-size: 7.5px; */
+}
+
+.spinr {
+    /* Positioning button */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(275%, -50%);
+    width: 125px;
+    height: 125px;
+    /* Other formatting */
+    border-radius: 50%;
+    border: 0.125px solid rgb(175, 175, 175);
+    background-color: rgb(225, 225, 225);
+    color: #fff;
+    box-shadow: 0 2.5px 2.5px #bbbbbb;
+    /* Font stuff */
+    /* font-weight: bold; */
+    /* font-size: 10px; */
+    /* Cursor */
+    cursor: pointer;
+    /* z-index: 10; */
+    background-image: url('spin-right.png');
+    background-position: 1px;
+    background-size: 120px;
+}
+
+.spinr:active {
+    /* Change size when clicked */
+    width: 115px;
+    height: 115px;
+    /* font-size: 7.5px; */
 }
